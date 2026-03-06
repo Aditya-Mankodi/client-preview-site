@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SparkleNest Cleaning Services – Dubai</title>
+  <meta name="description" content="Professional residential and villa cleaning services in Dubai. SparkleNest – trusted by homeowners across Dubai Marina, JVC, Downtown, JLT & Business Bay." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --blue-deep: #1A4F8A;
+      --blue-mid: #2A6CB8;
+      --blue-light: #E8F1FB;
+      --blue-accent: #3B82F6;
+      --teal: #0EA5E9;
+      --white: #FFFFFF;
+      --off-white: #F8FAFB;
+      --surface: #FFFFFF;
+      --text-primary: #0F1C2E;
+      --text-secondary: #5A6A7E;
+      --border: #DDE6EF;
+      --success: #16A34A;
+      --whatsapp: #25D366;
+      --shadow-subtle: 0 1px 2px rgba(0,0,0,0.05);
+      --shadow-medium: 0 4px 12px rgba(0,0,0,0.10);
+      --shadow-large: 0 12px 40px rgba(26,79,138,0.15);
+      --radius-sm: 6px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
+      --radius-full: 9999px;
+      --font-display: 'Sora', sans-serif;
+      --font-body: 'DM Sans', sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-body);
+      background: var(--off-white);
+      color: var(--text-primary);
+      font-size: 16px;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* ── UTILITIES ─────────────────────────────── */
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--blue-deep); color: #fff;
+      padding: 0 28px; height: 48px; border-radius: var(--radius-full);
+      font-family: var(--font-display); font-weight: 600; font-size: 15px;
+      text-decoration: none; border: none; cursor: pointer;
+      transition: background .2s, transform .15s, box-shadow .2s;
+      box-shadow: 0 4px 14px rgba(26,79,138,0.28);
+      white-space: nowrap;
+    }
+    .btn-primary:hover { background: var(--blue-mid); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(26,79,138,0.35); }
+    .btn-whatsapp {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--whatsapp); color: #fff;
+      padding: 0 28px; height: 48px; border-radius: var(--radius-full);
+      font-family: var(--font-display); font-weight: 600; font-size: 15px;
+      text-decoration: none; border: none; cursor: pointer;
+      transition: background .2s, transform .15s, box-shadow .2s;
+      box-shadow: 0 4px 14px rgba(37,211,102,0.30);
+      white-space: nowrap;
+    }
+    .btn-whatsapp:hover { background: #1ebe5d; transform: translateY(-1px); }
+    .btn-outline {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: transparent; color: var(--blue-deep);
+      padding: 0 28px; height: 48px; border-radius: var(--radius-full);
+      font-family: var(--font-display); font-weight: 600; font-size: 15px;
+      text-decoration: none; border: 2px solid var(--blue-deep); cursor: pointer;
+      transition: all .2s;
+      white-space: nowrap;
+    }
+    .btn-outline:hover { background: var(--blue-light); }
+
+    section { padding: 80px 0; }
+    .section-label {
+      display: inline-block;
+      font-family: var(--font-display); font-size: 12px; font-weight: 600;
+      letter-spacing: .12em; text-transform: uppercase;
+      color: var(--blue-accent); margin-bottom: 12px;
+    }
+    .section-title {
+      font-family: var(--font-display); font-size: clamp(28px, 4vw, 40px);
+      font-weight: 700; line-height: 1.2; color: var(--text-primary);
+      margin-bottom: 16px;
+    }
+    .section-sub { font-size: 17px; color: var(--text-secondary); max-width: 560px; }
+    .text-center { text-align: center; }
+    .text-center .section-sub { margin: 0 auto; }
+
+    /* ── STICKY HEADER ─────────────────────────── */
+    header {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      box-shadow: var(--shadow-subtle);
+    }
+    .header-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      height: 68px; gap: 16px;
+    }
+    .logo-text {
+      font-family: var(--font-display); font-size: 20px; font-weight: 700;
+      color: var(--blue-deep); text-decoration: none; letter-spacing: -.02em;
+    }
+    .logo-text span { color: var(--teal); }
+    nav { display: flex; gap: 32px; }
+    nav a {
+      font-family: var(--font-display); font-size: 14px; font-weight: 500;
+      color: var(--text-secondary); text-decoration: none;
+      transition: color .2s;
+    }
+    nav a:hover { color: var(--blue-deep); }
+    .header-cta { display: flex; gap: 10px; }
+    .hamburger { display: none; background: none; border: none; cursor: pointer; padding: 4px; }
+    .hamburger span {
+      display: block; width: 22px; height: 2px;
+      background: var(--text-primary); margin: 5px 0;
+      border-radius: 2px; transition: .3s;
+    }
+
+    /* ── HERO ──────────────────────────────────── */
+    #hero {
+      background: linear-gradient(135deg, #0F1C2E 0%, #1A4F8A 55%, #1d6fa8 100%);
+      padding: 100px 0 90px; position: relative; overflow: hidden;
+    }
+    #hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Ccircle cx='30' cy='30' r='20'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+    #hero::after {
+      content: '';
+      position: absolute; bottom: -40px; right: -80px;
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, rgba(14,165,233,0.18) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero-inner {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 64px;
+      align-items: center; position: relative; z-index: 1;
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2);
+      color: #93C5FD; padding: 6px 14px; border-radius: var(--radius-full);
+      font-size: 13px; font-weight: 500; margin-bottom: 24px;
+    }
+    .hero-badge::before { content: '✦'; font-size: 10px; }
+    .hero-title {
+      font-family: var(--font-display); font-size: clamp(36px, 5vw, 56px);
+      font-weight: 700; color: #fff; line-height: 1.1;
+      letter-spacing: -.02em; margin-bottom: 20px;
+    }
+    .hero-title em { font-style: normal; color: #7DD3FC; }
+    .hero-sub {
+      font-size: 17px; color: rgba(255,255,255,0.72);
+      line-height: 1.7; margin-bottom: 36px; max-width: 440px;
+    }
+    .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+    .hero-stats {
+      display: flex; gap: 32px; margin-top: 48px; padding-top: 36px;
+      border-top: 1px solid rgba(255,255,255,0.12);
+    }
+    .hero-stat-num {
+      font-family: var(--font-display); font-size: 28px; font-weight: 700; color: #fff;
+    }
+    .hero-stat-label { font-size: 13px; color: rgba(255,255,255,0.55); margin-top: 2px; }
+    .hero-visual {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: var(--radius-lg);
+      height: 380px;
+      display: flex; align-items: center; justify-content: center;
+      flex-direction: column; gap: 12px;
+      color: rgba(255,255,255,0.35); font-size: 14px;
+      backdrop-filter: blur(6px);
+    }
+    .hero-visual-icon { font-size: 48px; opacity: .4; }
+
+    /* ── TRUST BAR ─────────────────────────────── */
+    #trust-bar {
+      background: var(--white); padding: 28px 0;
+      border-bottom: 1px solid var(--border);
+      box-shadow: var(--shadow-subtle);
+    }
+    .trust-bar-inner {
+      display: flex; align-items: center; justify-content: center;
+      gap: 40px; flex-wrap: wrap;
+    }
+    .trust-item {
+      display: flex; align-items: center; gap: 10px;
+      font-family: var(--font-display); font-size: 14px; font-weight: 600;
+      color: var(--text-primary);
+    }
+    .trust-icon {
+      width: 36px; height: 36px; border-radius: var(--radius-full);
+      background: var(--blue-light); display: flex; align-items: center; justify-content: center;
+      font-size: 16px; flex-shrink: 0;
+    }
+    .trust-divider { width: 1px; height: 32px; background: var(--border); }
+
+    /* ── SERVICES ──────────────────────────────── */
+    #services { background: var(--off-white); }
+    .services-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 48px;
+    }
+    .service-card {
+      background: var(--white); border-radius: var(--radius-lg);
+      padding: 32px 28px; border: 1px solid var(--border);
+      box-shadow: var(--shadow-subtle);
+      transition: transform .2s, box-shadow .2s, border-color .2s;
+      display: flex; flex-direction: column; gap: 12px;
+    }
+    .service-card:hover {
+      transform: translateY(-4px); box-shadow: var(--shadow-large);
+      border-color: #B8D4F0;
+    }
+    .service-icon {
+      width: 52px; height: 52px; border-radius: var(--radius-md);
+      background: var(--blue-light); display: flex; align-items: center;
+      justify-content: center; font-size: 26px;
+    }
+    .service-name {
+      font-family: var(--font-display); font-size: 17px; font-weight: 600;
+      color: var(--text-primary);
+    }
+    .service-desc { font-size: 14px; color: var(--text-secondary); line-height: 1.6; flex: 1; }
+    .service-link {
+      font-family: var(--font-display); font-size: 13px; font-weight: 600;
+      color: var(--blue-deep); text-decoration: none; display: inline-flex;
+      align-items: center; gap: 4px; margin-top: 4px;
+      transition: gap .2s;
+    }
+    .service-link:hover { gap: 8px; }
+
+    /* ── WHY CHOOSE US ─────────────────────────── */
+    #why { background: var(--white); }
+    .why-grid {
+      display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-top: 48px;
+    }
+    .why-card {
+      background: var(--off-white); border-radius: var(--radius-lg);
+      padding: 28px 24px; display: flex; gap: 20px; align-items: flex-start;
+      border: 1px solid var(--border); transition: box-shadow .2s;
+    }
+    .why-card:hover { box-shadow: var(--shadow-medium); }
+    .why-icon {
+      width: 48px; height: 48px; border-radius: var(--radius-md);
+      background: var(--blue-light); display: flex; align-items: center;
+      justify-content: center; font-size: 24px; flex-shrink: 0;
+    }
+    .why-title {
+      font-family: var(--font-display); font-size: 16px; font-weight: 600;
+      margin-bottom: 6px; color: var(--text-primary);
+    }
+    .why-desc { font-size: 14px; color: var(--text-secondary); line-height: 1.65; }
+
+    /* ── HOW IT WORKS ──────────────────────────── */
+    #how { background: linear-gradient(160deg, #EEF5FD 0%, #F8FAFB 100%); }
+    .steps-row {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px;
+      margin-top: 56px; position: relative;
+    }
+    .steps-row::before {
+      content: '';
+      position: absolute; top: 32px; left: calc(16.67% + 24px); right: calc(16.67% + 24px);
+      height: 2px; background: repeating-linear-gradient(90deg, var(--blue-deep) 0, var(--blue-deep) 8px, transparent 8px, transparent 18px);
+      opacity: .25;
+    }
+    .step {
+      text-align: center; display: flex; flex-direction: column;
+      align-items: center; gap: 16px;
+    }
+    .step-num {
+      width: 64px; height: 64px; border-radius: var(--radius-full);
+      background: var(--blue-deep); color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-display); font-size: 22px; font-weight: 700;
+      box-shadow: 0 6px 20px rgba(26,79,138,0.25);
+      position: relative; z-index: 1;
+    }
+    .step-icon { font-size: 28px; }
+    .step-title {
+      font-family: var(--font-display); font-size: 16px; font-weight: 600;
+      color: var(--text-primary);
+    }
+    .step-desc { font-size: 14px; color: var(--text-secondary); line-height: 1.6; }
+
+    /* ── SERVICE AREAS ─────────────────────────── */
+    #areas { background: var(--white); }
+    .areas-wrap {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 48px;
+      align-items: center; margin-top: 48px;
+    }
+    .area-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+    .area-tag {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 8px 16px; border-radius: var(--radius-full);
+      background: var(--blue-light); color: var(--blue-deep);
+      font-family: var(--font-display); font-size: 14px; font-weight: 600;
+      border: 1px solid #C3D9F0;
+    }
+    .map-placeholder {
+      background: linear-gradient(135deg, #EEF5FD, #dce9f8);
+      border-radius: var(--radius-lg); height: 300px;
+      display: flex; align-items: center; justify-content: center;
+      flex-direction: column; gap: 12px; border: 1px dashed #B8D4F0;
+      color: var(--text-secondary); font-size: 14px;
+    }
+    .map-placeholder-icon { font-size: 40px; opacity: .5; }
+
+    /* ── FAQ ───────────────────────────────────── */
+    #faq { background: var(--off-white); }
+    .faq-list { margin-top: 48px; display: flex; flex-direction: column; gap: 12px; }
+    details {
+      background: var(--white); border-radius: var(--radius-md);
+      border: 1px solid var(--border); overflow: hidden;
+    }
+    summary {
+      padding: 20px 24px; font-family: var(--font-display); font-size: 15px;
+      font-weight: 600; cursor: pointer; list-style: none;
+      display: flex; justify-content: space-between; align-items: center;
+      color: var(--text-primary);
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after {
+      content: '+'; font-size: 20px; color: var(--blue-deep);
+      transition: transform .3s; line-height: 1;
+    }
+    details[open] summary::after { content: '−'; }
+    .faq-answer { padding: 0 24px 20px; font-size: 15px; color: var(--text-secondary); line-height: 1.7; }
+
+    /* ── FINAL CTA ─────────────────────────────── */
+    #cta-final {
+      background: linear-gradient(135deg, #0F1C2E 0%, #1A4F8A 100%);
+      text-align: center; padding: 100px 0; position: relative; overflow: hidden;
+    }
+    #cta-final::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse at center, rgba(14,165,233,0.18) 0%, transparent 70%);
+    }
+    .cta-title {
+      font-family: var(--font-display); font-size: clamp(32px, 5vw, 48px);
+      font-weight: 700; color: #fff; margin-bottom: 16px; position: relative;
+    }
+    .cta-sub { font-size: 18px; color: rgba(255,255,255,0.65); margin-bottom: 40px; position: relative; }
+    .cta-actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; position: relative; }
+    .btn-primary-light {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: #fff; color: var(--blue-deep);
+      padding: 0 28px; height: 48px; border-radius: var(--radius-full);
+      font-family: var(--font-display); font-weight: 600; font-size: 15px;
+      text-decoration: none; border: none; cursor: pointer;
+      transition: all .2s; box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+      white-space: nowrap;
+    }
+    .btn-primary-light:hover { background: var(--blue-light); transform: translateY(-1px); }
+
+    /* ── CONTACT ───────────────────────────────── */
+    #contact { background: var(--white); }
+    .contact-grid {
+      display: grid; grid-template-columns: 1fr 1.4fr; gap: 56px;
+      align-items: start; margin-top: 48px;
+    }
+    .contact-info { display: flex; flex-direction: column; gap: 24px; }
+    .contact-item {
+      display: flex; gap: 16px; align-items: flex-start;
+    }
+    .contact-item-icon {
+      width: 44px; height: 44px; border-radius: var(--radius-md);
+      background: var(--blue-light); display: flex; align-items: center;
+      justify-content: center; font-size: 20px; flex-shrink: 0;
+    }
+    .contact-item-label {
+      font-family: var(--font-display); font-size: 13px; font-weight: 600;
+      text-transform: uppercase; letter-spacing: .08em; color: var(--text-secondary);
+      margin-bottom: 4px;
+    }
+    .contact-item-value { font-size: 15px; color: var(--text-primary); font-weight: 500; }
+    .contact-item-value a { color: var(--blue-deep); text-decoration: none; }
+    .contact-form { display: flex; flex-direction: column; gap: 16px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .form-group { display: flex; flex-direction: column; gap: 6px; }
+    label {
+      font-family: var(--font-display); font-size: 13px; font-weight: 600;
+      color: var(--text-secondary);
+    }
+    input, select, textarea {
+      border: 1px solid var(--border); border-radius: var(--radius-sm);
+      padding: 12px 14px; font-family: var(--font-body); font-size: 15px;
+      color: var(--text-primary); background: var(--off-white);
+      transition: border-color .2s, box-shadow .2s; width: 100%;
+      outline: none;
+    }
+    input:focus, select:focus, textarea:focus {
+      border-color: var(--blue-mid);
+      box-shadow: 0 0 0 3px rgba(42,108,184,0.12);
+    }
+    textarea { resize: vertical; min-height: 110px; }
+    select { appearance: none; cursor: pointer; }
+    .form-submit { margin-top: 4px; }
+    .form-submit .btn-primary { width: 100%; justify-content: center; height: 52px; font-size: 16px; }
+
+    /* ── FOOTER ────────────────────────────────── */
+    footer {
+      background: var(--text-primary); color: rgba(255,255,255,0.6);
+      padding: 64px 0 32px;
+    }
+    .footer-grid {
+      display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px;
+      margin-bottom: 48px;
+    }
+    .footer-logo {
+      font-family: var(--font-display); font-size: 22px; font-weight: 700;
+      color: #fff; text-decoration: none; letter-spacing: -.02em;
+      display: block; margin-bottom: 14px;
+    }
+    .footer-logo span { color: #7DD3FC; }
+    .footer-desc { font-size: 14px; line-height: 1.7; margin-bottom: 20px; }
+    .footer-col-title {
+      font-family: var(--font-display); font-size: 13px; font-weight: 700;
+      text-transform: uppercase; letter-spacing: .1em; color: #fff;
+      margin-bottom: 16px;
+    }
+    .footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-links a {
+      font-size: 14px; color: rgba(255,255,255,0.55); text-decoration: none;
+      transition: color .2s;
+    }
+    .footer-links a:hover { color: #7DD3FC; }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding-top: 24px; display: flex; justify-content: space-between;
+      align-items: center; flex-wrap: wrap; gap: 12px;
+    }
+    .footer-bottom p { font-size: 13px; }
+    .footer-bottom-links { display: flex; gap: 20px; }
+    .footer-bottom-links a { font-size: 13px; color: rgba(255,255,255,0.4); text-decoration: none; }
+
+    /* ── FLOATING WA BUTTON ────────────────────── */
+    .float-wa {
+      position: fixed; bottom: 28px; right: 24px; z-index: 200;
+      width: 58px; height: 58px; border-radius: var(--radius-full);
+      background: var(--whatsapp); color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 28px; box-shadow: 0 6px 24px rgba(37,211,102,0.45);
+      text-decoration: none; transition: transform .2s, box-shadow .2s;
+    }
+    .float-wa:hover { transform: scale(1.08); box-shadow: 0 8px 32px rgba(37,211,102,0.55); }
+    .float-wa::before {
+      content: '';
+      position: absolute; inset: -6px;
+      border-radius: var(--radius-full);
+      border: 2px solid rgba(37,211,102,0.3);
+      animation: wa-pulse 2s infinite;
+    }
+    @keyframes wa-pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0; transform: scale(1.3); }
+    }
+
+    /* ── MOBILE ────────────────────────────────── */
+    @media (max-width: 900px) {
+      section { padding: 64px 0; }
+      .hero-inner { grid-template-columns: 1fr; gap: 40px; }
+      .hero-visual { display: none; }
+      .services-grid { grid-template-columns: repeat(2, 1fr); }
+      .why-grid { grid-template-columns: 1fr; }
+      .steps-row { grid-template-columns: 1fr; gap: 32px; }
+      .steps-row::before { display: none; }
+      .areas-wrap { grid-template-columns: 1fr; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+      nav { display: none; }
+      .hamburger { display: block; }
+    }
+    @media (max-width: 600px) {
+      .services-grid { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .header-cta .btn-outline { display: none; }
+      .trust-bar-inner { gap: 20px; }
+      .trust-divider { display: none; }
+    }
+
+    /* ── ABOUT PAGE ────────────────────────────── */
+    #about { background: var(--off-white); }
+    .about-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 56px;
+      align-items: center; margin-top: 48px;
+    }
+    .about-visual {
+      background: linear-gradient(135deg, var(--blue-light), #dce9f8);
+      border-radius: var(--radius-lg); height: 360px;
+      display: flex; align-items: center; justify-content: center;
+      flex-direction: column; gap: 12px; border: 1px dashed #B8D4F0;
+      color: var(--text-secondary); font-size: 14px;
+    }
+    .about-points { display: flex; flex-direction: column; gap: 16px; margin-top: 24px; }
+    .about-point { display: flex; gap: 12px; align-items: flex-start; }
+    .about-check {
+      width: 24px; height: 24px; border-radius: var(--radius-full);
+      background: var(--success); color: #fff; display: flex; align-items: center;
+      justify-content: center; font-size: 13px; flex-shrink: 0; margin-top: 1px;
+    }
+    .about-point-text { font-size: 15px; color: var(--text-secondary); line-height: 1.6; }
+
+    @media (max-width: 900px) {
+      .about-grid { grid-template-columns: 1fr; }
+      .about-visual { display: none; }
+    }
+
+    /* Fade-in animation */
+    .fade-in { opacity: 0; transform: translateY(20px); transition: opacity .5s ease, transform .5s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body>
+
+<!-- ══ FLOATING WHATSAPP ══════════════════════════════════════ -->
+<a href="https://wa.me/971XXXXXXXXX?text=Hi%20SparkleNest%2C%20I'd%20like%20to%20book%20a%20cleaning%20service."
+   class="float-wa" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  💬
+</a>
+
+<!-- ══ STICKY HEADER ══════════════════════════════════════════ -->
+<header>
+  <div class="container">
+    <div class="header-inner">
+      <a href="#hero" class="logo-text">Sparkle<span>Nest</span></a>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#areas">Areas</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="header-cta">
+        <a href="#contact" class="btn-outline" style="height:40px;padding:0 20px;font-size:14px;">Get a Quote</a>
+        <a href="https://wa.me/971XXXXXXXXX?text=Hi%20SparkleNest%2C%20I'd%20like%20to%20book%20a%20cleaning%20service."
+           class="btn-whatsapp" style="height:40px;padding:0 20px;font-size:14px;" target="_blank" rel="noopener">
+          Book on WhatsApp
+        </a>
+      </div>
+      <button class="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ══ HERO ════════════════════════════════════════════════════ -->
+<section id="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <div>
+        <div class="hero-badge">Trusted cleaning in Dubai</div>
+        <h1 class="hero-title">
+          A Cleaner Home,<br/><em>Every Single Time</em>
+        </h1>
+        <p class="hero-sub">
+          Professional residential and villa cleaning services across Dubai — reliable, punctual, and consistent. Booking takes 60 seconds on WhatsApp.
+        </p>
+        <div class="hero-actions">
+          <a href="https://wa.me/971XXXXXXXXX?text=Hi%20SparkleNest%2C%20I'd%20like%20to%20book%20a%20cleaning%20service."
+             class="btn-whatsapp" target="_blank" rel="noopener">
+            📲 Book on WhatsApp
+          </a>
+          <a href="#contact" class="btn-outline" style="color:#fff;border-color:rgba(255,255,255,0.4);">
+            Get a Free Quote
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <div class="hero-stat-num">500+</div>
+            <div class="hero-stat-label">Homes Cleaned</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">5 Areas</div>
+            <div class="hero-stat-label">Served in Dubai</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">100%</div>
+            <div class="hero-stat-label">Satisfaction Guarantee</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-visual-icon">🏠</div>
+        <span>[Image Placeholder — Modern Dubai Home Interior]</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TRUST BAR ═══════════════════════════════════════════════ -->
+<div id="trust-bar">
+  <div class="container">
+    <div class="trust-bar-inner">
+      <div class="trust-item">
+        <div class="trust-icon">✅</div>
+        Licensed &amp; Insured
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-item">
+        <div class="trust-icon">⚡</div>
+        Same-Day Available
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-item">
+        <div class="trust-icon">🌿</div>
+        Eco-Friendly Products
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-item">
+        <div class="trust-icon">🛡️</div>
+        Satisfaction Guarantee
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-item">
+        <div class="trust-icon">🔒</div>
+        Vetted &amp; Trained Staff
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ SERVICES ═══════════════════════════════════════════════ -->
+<section id="services">
+  <div class="container">
+    <div class="text-center fade-in">
+      <span class="section-label">What We Offer</span>
+      <h2 class="section-title">Cleaning Services Tailored to Your Home</h2>
+      <p class="section-sub">From regular upkeep to thorough deep cleans — we handle it all with care and professionalism.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card fade-in">
+        <div class="service-icon">🏡</div>
+        <div class="service-name">Residential Cleaning</div>
+        <div class="service-desc">Regular home cleaning for apartments and villas. We cover every room — kitchen, bathrooms, bedrooms, and living areas — on your schedule.</div>
+        <a href="https://wa.me/971XXXXXXXXX?text=Hi%2C%20I'd%20like%20to%20enquire%20about%20Residential%20Cleaning." class="service-link" target="_blank">Request Quote →</a>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-icon">🧹</div>
+        <div class="service-name">Deep Cleaning</div>
+        <div class="service-desc">A thorough top-to-bottom clean including skirting boards, inside appliances, grout scrubbing, and hard-to-reach areas.</div>
+        <a href="https://wa.me/971XXXXXXXXX?text=Hi%2C%20I'd%20like%20to%20enquire%20about%20Deep%20Cleaning." class="service-link" target="_blank">Request Quote →</a>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-icon">🏛️</div>
+        <div class="service-name">Villa Cleaning</div>
+        <div class="service-desc">Specialist cleaning for larger villa properties across Dubai, including multiple floors, outdoor areas, and premium finishes.</div>
+        <a href="https://wa.me/971XXXXXXXXX?text=Hi%2C%20I'd%20like%20to%20enquire%20about%20Villa%20Cleaning." class="service-link" target="_blank">Request Quote →</a>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-icon">📦</div>
+        <div class="service-name">Move-In / Move-Out Cleaning</div>
+        <div class="service-desc">Comprehensive cleaning before you arrive or after you leave. Perfect for tenants, landlords, and property managers.</div>
+        <a href="https://wa.me/971XXXXXXXXX?text=Hi%2C%20I'd%20like%20to%20enquire%20about%20Move-In%20%2F%20Move-Out%20Cleaning." class="service-link" target="_blank">Request Quote →</a>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-icon">🪟</div>
+        <div class="service-name">Post-Renovation Cleaning</div>
+        <div class="service-desc">Construction dust and debris removal after renovations. We restore your space to a pristine, move-in-ready condition.</div>
+        <a href="https://wa.me/971XXXXXXXXX?text=Hi%2C%20I'd%20like%20to%20enquire%20about%20Post-Renovation%20Cleaning." class="service-link" target="_blank">Request Quote →</a>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-icon">🗓️</div>
+        <div class="service-name">Regular Maintenance Plans</div>
+        <div class="service-desc">Weekly or bi-weekly scheduled cleaning so your home always stays guest-ready. Flexible plans to fit your lifestyle.</div>
+        <a href="https://wa.me/971XXXXXXXXX?text=Hi%2C%20I'd%20like%20to%20enquire%20about%20a%20Maintenance%20Plan." class="service-link" target="_blank">Request Quote →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ WHY CHOOSE US ═══════════════════════════════════════════ -->
+<section id="why">
+  <div class="container">
+    <div class="fade-in">
+      <span class="section-label">Why SparkleNest</span>
+      <h2 class="section-title">The Dubai Cleaning Service Homeowners Rely On</h2>
+      <p class="section-sub">We know how hard it is to find cleaners who show up on time and do the job right. That's why we built SparkleNest differently.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card fade-in">
+        <div class="why-icon">🧑‍🤝‍🧑</div>
+        <div>
+          <div class="why-title">Experienced &amp; Vetted Cleaners</div>
+          <div class="why-desc">Every team member is background-checked, trained, and held to a strict quality standard before entering your home.</div>
+        </div>
+      </div>
+      <div class="why-card fade-in">
+        <div class="why-icon">💬</div>
+        <div>
+          <div class="why-title">Transparent, Upfront Pricing</div>
+          <div class="why-desc">No hidden fees, no surprises. You get a clear quote before any work begins — and we stick to it.</div>
+        </div>
+      </div>
+      <div class="why-card fade-in">
+        <div class="why-icon">🌿</div>
+        <div>
+          <div class="why-title">Eco-Friendly Cleaning Products</div>
+          <div class="why-desc">We use safe, non-toxic, family and pet-friendly products that are tough on grime but gentle on your home and the environment.</div>
+        </div>
+      </div>
+      <div class="why-card fade-in">
+        <div class="why-icon">🕐</div>
+        <div>
+          <div class="why-title">Flexible, Punctual Scheduling</div>
+          <div class="why-desc">Book on your terms — early morning, evenings, or weekends. Our team shows up on time, every time.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ HOW IT WORKS ════════════════════════════════════════════ -->
+<section id="how">
+  <div class="container">
+    <div class="text-center fade-in">
+      <span class="section-label">Simple Process</span>
+      <h2 class="section-title">Booked, Cleaned &amp; Done in 3 Steps</h2>
+      <p class="section-sub">Getting a spotless home has never been easier. Here's how SparkleNest works.</p>
+    </div>
+    <div class="steps-row">
+      <div class="step fade-in">
+        <div class="step-num">1</div>
+        <div class="step-icon">📲</div>
+        <div class="step-title">Request a Quote</div>
+        <div class="step-desc">Message us on WhatsApp or fill out the contact form. Tell us your space, location, and preferred date.</div>
+      </div>
+      <div class="step fade-in">
+        <div class="step-num">2</div>
+        <div class="step-icon">📅</div>
+        <div class="step-title">Schedule Your Cleaning</div>
+        <div class="step-desc">We confirm a time that works for you. Our team arrives fully equipped — no prep needed on your end.</div>
+      </div>
+      <div class="step fade-in">
+        <div class="step-num">3</div>
+        <div class="step-icon">✨</div>
+        <div class="step-title">Relax &amp; Enjoy a Clean Home</div>
+        <div class="step-desc">Sit back while we transform your space. We leave only when the job is done to your satisfaction.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ ABOUT ═══════════════════════════════════════════════════ -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-visual">
+        <span style="font-size:40px;opacity:.4">🧽</span>
+        <span>[Image Placeholder — Cleaning Team in Action]</span>
+      </div>
+      <div class="fade-in">
+        <span class="section-label">About SparkleNest</span>
+        <h2 class="section-title">Built on Reliability,<br/>Delivered Through Quality</h2>
+        <p class="section-sub" style="margin-top:0">SparkleNest was founded with a single mission: give Dubai homeowners access to cleaning professionals they can genuinely trust — people who care about the work they do and the homes they enter.</p>
+        <div class="about-points">
+          <div class="about-point">
+            <div class="about-check">✓</div>
+            <div class="about-point-text">Fully trained, insured, and vetted cleaning professionals</div>
+          </div>
+          <div class="about-point">
+            <div class="about-check">✓</div>
+            <div class="about-point-text">Consistent results — the same high standard every visit</div>
+          </div>
+          <div class="about-point">
+            <div class="about-check">✓</div>
+            <div class="about-point-text">Customer-first service — your satisfaction drives everything we do</div>
+          </div>
+          <div class="about-point">
+            <div class="about-check">✓</div>
+            <div class="about-point-text">UAE-based, community-trusted, and locally operated</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SERVICE AREAS ═══════════════════════════════════════════ -->
+<section id="areas">
+  <div class="container">
+    <div class="areas-wrap">
+      <div class="fade-in">
+        <span class="section-label">Where We Operate</span>
+        <h2 class="section-title">Serving Homeowners Across Dubai</h2>
+        <p class="section-sub">SparkleNest currently serves residential communities across these Dubai neighbourhoods — with more areas being added soon.</p>
+        <div class="area-tags">
+          <span class="area-tag">📍 Dubai Marina</span>
+          <span class="area-tag">📍 JVC</span>
+          <span class="area-tag">📍 Downtown Dubai</span>
+          <span class="area-tag">📍 JLT</span>
+          <span class="area-tag">📍 Business Bay</span>
+        </div>
+        <p style="margin-top:20px;font-size:14px;color:var(--text-secondary)">Don't see your area? Message us — we may still be able to help.</p>
+        <div style="margin-top:24px">
+          <a href="https://wa.me/971XXXXXXXXX?text=Hi%2C%20I'd%20like%20to%20check%20if%20you%20serve%20my%20area."
+             class="btn-whatsapp" target="_blank" rel="noopener">Check My Area on WhatsApp</a>
+        </div>
+      </div>
+      <div class="map-placeholder fade-in">
+        <div class="map-placeholder-icon">🗺️</div>
+        <span>[Map Placeholder — Dubai Service Areas]</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FAQ ═════════════════════════════════════════════════════ -->
+<section id="faq">
+  <div class="container">
+    <div class="text-center fade-in">
+      <span class="section-label">FAQ</span>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <p class="section-sub">Everything you need to know before booking with SparkleNest.</p>
+    </div>
+    <div class="faq-list fade-in">
+      <details>
+        <summary>How do I book a cleaning with SparkleNest?</summary>
+        <div class="faq-answer">The easiest way is to message us directly on WhatsApp. You can also fill out our contact form and we'll get back to you within a few hours to confirm your booking.</div>
+      </details>
+      <details>
+        <summary>Do I need to be home during the cleaning?</summary>
+        <div class="faq-answer">Not necessarily. Many of our clients provide access and we clean while they're at work. We'll discuss the best arrangement for you when booking.</div>
+      </details>
+      <details>
+        <summary>What areas in Dubai do you cover?</summary>
+        <div class="faq-answer">We currently serve Dubai Marina, JVC, Downtown Dubai, JLT, and Business Bay. If you're in a nearby area, reach out and we'll do our best to accommodate you.</div>
+      </details>
+      <details>
+        <summary>Do you bring your own cleaning supplies?</summary>
+        <div class="faq-answer">Yes — our team arrives fully equipped with eco-friendly, professional-grade cleaning products and all the equipment needed to get the job done.</div>
+      </details>
+      <details>
+        <summary>Are your cleaners trustworthy and background-checked?</summary>
+        <div class="faq-answer">Absolutely. All SparkleNest team members go through a thorough vetting and background-check process before they're approved to work in client homes.</div>
+      </details>
+      <details>
+        <summary>What if I'm not satisfied with the clean?</summary>
+        <div class="faq-answer">We stand by our work. If you're not fully satisfied, let us know within 24 hours and we'll return to address any issues at no additional charge.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FINAL CTA ═══════════════════════════════════════════════ -->
+<section id="cta-final">
+  <div class="container">
+    <h2 class="cta-title">Ready for a Spotless Home?</h2>
+    <p class="cta-sub">Book in seconds on WhatsApp — no forms, no waiting, just a cleaner home.</p>
+    <div class="cta-actions">
+      <a href="https://wa.me/971XXXXXXXXX?text=Hi%20SparkleNest%2C%20I'd%20like%20to%20book%20a%20cleaning%20service."
+         class="btn-whatsapp" target="_blank" rel="noopener" style="font-size:16px;height:52px;padding:0 32px;">
+        📲 Book on WhatsApp
+      </a>
+      <a href="#contact" class="btn-primary-light" style="height:52px;padding:0 32px;font-size:16px;">Get a Free Quote</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CONTACT ═════════════════════════════════════════════════ -->
+<section id="contact">
+  <div class="container">
+    <div class="fade-in">
+      <span class="section-label">Get in Touch</span>
+      <h2 class="section-title">Request a Free Quote</h2>
+      <p class="section-sub">Fill out the form below or reach us directly on WhatsApp. We respond within a few hours.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info fade-in">
+        <div class="contact-item">
+          <div class="contact-item-icon">💬</div>
+          <div>
+            <div class="contact-item-label">WhatsApp (Fastest)</div>
+            <div class="contact-item-value">
+              <a href="https://wa.me/971XXXXXXXXX" target="_blank" rel="noopener">+971 XX XXX XXXX</a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">✉️</div>
+          <div>
+            <div class="contact-item-label">Email</div>
+            <div class="contact-item-value">
+              <a href="mailto:hello@sparklenest.ae">hello@sparklenest.ae</a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">📍</div>
+          <div>
+            <div class="contact-item-label">Service Location</div>
+            <div class="contact-item-value">Dubai, UAE</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">🕐</div>
+          <div>
+            <div class="contact-item-label">Business Hours</div>
+            <div class="contact-item-value">
+              Mon – Sat: 8:00 AM – 7:00 PM<br/>
+              <span style="font-size:13px;color:var(--text-secondary)">WhatsApp available 7 days</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fade-in">
+        <form class="contact-form" action="https://formspree.io/f/YOURFORMID" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone / WhatsApp</label>
+              <input type="tel" id="phone" name="phone" placeholder="+971 5X XXX XXXX" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" />
+          </div>
+          <div class="form-group">
+            <label for="service">Service Needed</label>
+            <select id="service" name="service" required>
+              <option value="" disabled selected>Select a service…</option>
+              <option>Residential Cleaning</option>
+              <option>Deep Cleaning</option>
+              <option>Villa Cleaning</option>
+              <option>Move-In / Move-Out Cleaning</option>
+              <option>Post-Renovation Cleaning</option>
+              <option>Regular Maintenance Plan</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell us about your home, preferred dates, or any special requirements…"></textarea>
+          </div>
+          <div class="form-submit">
+            <button type="submit" class="btn-primary">Send Enquiry →</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══════════════════════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="#hero" class="footer-logo">Sparkle<span>Nest</span></a>
+        <p class="footer-desc">Professional residential and villa cleaning services across Dubai. Trusted by busy homeowners who value quality, reliability, and peace of mind.</p>
+        <a href="https://wa.me/971XXXXXXXXX?text=Hi%20SparkleNest%2C%20I'd%20like%20to%20book%20a%20cleaning%20service."
+           class="btn-whatsapp" style="font-size:14px;height:42px;padding:0 20px;" target="_blank" rel="noopener">
+          Book on WhatsApp
+        </a>
+      </div>
+      <div>
+        <div class="footer-col-title">Services</div>
+        <ul class="footer-links">
+          <li><a href="#services">Residential Cleaning</a></li>
+          <li><a href="#services">Deep Cleaning</a></li>
+          <li><a href="#services">Villa Cleaning</a></li>
+          <li><a href="#services">Move-In / Move-Out</a></li>
+          <li><a href="#services">Post-Renovation</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Company</div>
+        <ul class="footer-links">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#areas">Areas Served</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Contact</div>
+        <ul class="footer-links">
+          <li><a href="https://wa.me/971XXXXXXXXX" target="_blank">WhatsApp Us</a></li>
+          <li><a href="mailto:hello@sparklenest.ae">hello@sparklenest.ae</a></li>
+          <li style="color:rgba(255,255,255,0.35);font-size:14px;">Dubai, UAE</li>
+          <li style="color:rgba(255,255,255,0.35);font-size:14px;">Mon–Sat: 8AM – 7PM</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 SparkleNest Cleaning Services. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Intersection Observer for fade-in
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(el => {
+      if (el.isIntersecting) {
+        el.target.classList.add('visible');
+        observer.unobserve(el.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>

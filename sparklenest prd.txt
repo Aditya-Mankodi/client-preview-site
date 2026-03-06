@@ -1,0 +1,90 @@
+1. Business Overview
+
+Business name: SparkleNest Cleaning Services
+
+Business type: Residential cleaning, villa cleaning, deep cleaning
+
+Location(s) served: Dubai (Dubai Marina, JVC, Downtown, JLT, Business Bay)
+
+Primary business goal: Increase WhatsApp enquiries and booking requests from homeowners
+
+ASSETS PROVIDED:
+Logo: No
+Images: No
+Testimonials: No
+
+2. Target Customer
+
+Customer profile: Apartment owners, villa homeowners, busy professionals, families
+
+Main pain point: Hard to find reliable and punctual cleaners who do consistent quality work
+
+Primary device used: Mobile
+
+Primary action desired: WhatsApp message for booking or quote request
+
+3. Website Pages (Scope Locked)
+
+Home: Clear hero section, services overview, trust indicators, primary CTA
+
+Services: Residential cleaning, deep cleaning, villa cleaning, move-in / move-out cleaning
+
+About: Background of company, reliability, trained staff, customer-first service
+
+Contact: WhatsApp CTA + enquiry form
+
+Optional page: Areas Served
+
+4. Core CTA & Conversion Flow
+
+Primary CTA: “Book on WhatsApp”
+
+Secondary CTA (optional): “Get a Free Quote”
+
+Conversion flow:
+Visitor → Website → WhatsApp enquiry → Client confirms booking
+
+5. Content Guidelines
+
+Tone: Friendly, professional, trustworthy
+
+Language: Clear English (UAE-friendly)
+
+Images: Stock images of modern homes and cleaning professionals
+
+Testimonials: Not included
+
+6. Design Direction (Light)
+
+Style: Clean, modern, residential service oriented
+
+Color preference: White + soft blue accent
+
+Design inspiration: Minimal layouts focused on booking conversion
+
+7. Tech Stack & Integrations
+
+Website builder: Framer
+
+Form handling: Formspree
+
+Messaging integration: WhatsApp click-to-chat
+
+Hosting & domain: Framer-hosted (demo)
+
+8. Non-Goals (Explicit Exclusions)
+
+No online payments
+No user accounts or dashboards
+No complex automations or CRM
+No ongoing SEO, ads, or marketing services
+
+9. Success Criteria
+
+Website is live and accessible
+
+Fully mobile-responsive
+
+WhatsApp CTA works correctly
+
+Visitors can easily request a quote
